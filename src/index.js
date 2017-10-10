@@ -51,7 +51,6 @@ class Game extends React.Component {
         const history = this.state.history.slice(0, this.state.stepNumber + 1);
         const current = history[history.length - 1];
         const squares = current.squares.slice();
-        console.log(this.state.xIsNext);
 
         // 如果有赢家或格子里有棋子，格子不能再点击放置棋子了
         if(calculateWinner(squares) || squares[i]) {
